@@ -11,7 +11,7 @@ $(".hero-slider").slick({
   speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
-  slidesToShow: 6,
+  slidesToShow: 7,
   slidesToScroll: 4,
   responsive: [
     {

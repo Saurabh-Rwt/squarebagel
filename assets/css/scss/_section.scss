@@ -6,16 +6,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Gilroy-Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Gilroy-Bold"), url("./../../font/Gilroy-Bold.woff") format("woff");
-}
-
 body {
   overflow-x: hidden;
-  // font-family: "Gilroy-Bold";
   font-family: "Open Sans", sans-serif;
 }
 
@@ -175,11 +167,13 @@ button {
 
 /*---------- Hero wrap ---------*/
 .hero-wrap {
-  background-color: $black;
+  background: url(../image/hero/hero-desktop.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
   padding: 8rem 0;
   .title {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 600;
     color: $white;
     text-align: center;
   }
@@ -443,6 +437,19 @@ button {
 footer {
   background-color: $dark;
   padding: 80px 0;
+  position: relative;
+
+  &::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background: url(../image/footer/img.png) no-repeat center;
+    background-size: cover;
+    height: 10rem;
+    width: 10rem;
+  }
+
   .row {
     display: grid;
     grid-template-columns: 28% 18% 18% 18% 18%;
@@ -474,7 +481,7 @@ footer {
       }
       .icon {
         height: 35px;
-        width: 35px;
+        width: 45px;
         border-radius: 50%;
         background-color: $white;
         text-align: center;
