@@ -1,0 +1,98 @@
+header{
+    
+    .humburger{
+        padding: 10px;
+        border: none;
+        background: transparent;
+        .bar{
+            display: block;
+            height: 2px;
+            width: 1.5rem;
+            background: $dark;
+            margin-bottom: 7px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2){
+                width: 2rem;
+            }            
+        }
+        &.show{
+            .bar{
+                width: 2rem;
+            }
+        }
+    }
+
+    nav{
+        padding: 0.7rem 2rem;
+        display: grid;
+        grid-template-columns: 12% 50% 15% 15%;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        .search-bar{
+            position: relative;
+            width: 100%;
+            input[type="text"]{
+                height: 50px;
+                width: 100%;
+                padding: 0 12px;
+                border: 1px solid $border-color;
+                border-radius: 3rem;
+                font-size: 16px;
+
+                &:focus-visible{
+                    outline: none;
+                }
+            }
+            .search-btn{
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translate(0, -50%);
+                background: transparent;
+                border: none;
+            }
+        }
+        .cart-img{
+            max-width: 20px;
+            object-fit: contain;
+        }
+
+        .user-links{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            a{
+                font-size: 16px;
+                font-weight: 600;
+                color: $dark;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .lower-nav{
+        padding: 1rem 0;
+        .nav-list{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            li{
+                a{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $dark;
+                    i{
+                        padding-left: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
