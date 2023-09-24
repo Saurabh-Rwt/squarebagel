@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slick-slider-min.css">
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             </div>
             <button class="primary-btn">Share your work</button>
             <div class="user-links">
-                <a href=""><span>Login</span><i class="fa-regular fa-user"></i></a>
+                <a href=""><span>Login</span><img src="assets/image/icons/user.png" alt="" class="user-icons"></a>
                 <a href=""> <span>Cart</span>
                     <img src="assets/image/icons/cart.png" class="cart-img" alt="">
                 </a>
@@ -153,8 +154,7 @@
                     <div class="title-wrap">
                         <h2 class="main-heading">Looking For Custom 3D Modeling at Scale?</h2>
                         <button class="primary-btn">Get Started Here</button>
-
-                        <div class="m-none">
+                        <div class="d-none">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
             <div class="column">
                 <div class="heading-wrap">
                     <h2 class="main-heading">3D Model Marketplace</h2>
-                    <p class="text">Choose from 1 580 000 3D models for applications such as gaming, AR/VR, advertising,
+                    <p class="text">Choose from <span class="bold">1 580 000</span class="bold"> 3D models for applications such as gaming, AR/VR, advertising,
                         animation, movies and 3D printing</p>
                 </div>
             </div>
@@ -191,7 +191,8 @@
                     </div>
                 </div>
                 <div class="column">
-                    <img src="assets/image/home/marketplace.png" alt="">
+                    <img src="assets/image/home/marketplace.png" class="m-none" alt="">
+                    <img src="assets/image/home/m-marketplace.png" class="d-none" alt="">
                 </div>
                 <div class="column v-center">
                     <div class="tab-content">
@@ -218,7 +219,7 @@
     <section class="model-wrap space">
         <div class="container">
             <div class="row-two">
-                <div class="column">
+                <div class="column v-center">
                     <img src="assets/image/home/model.png" alt="">
                 </div>
                 <div class="column">
@@ -272,6 +273,8 @@
                                 <p>Find tutorials and discuss other 3D related matters</p>
                             </div>
                         </div>
+
+                        <button class="community-btn">Join The Community</button>
                     </div>
                 </div>
                 <div class="column">
@@ -423,22 +426,31 @@
                         <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
-                </div>   
-                
+                </div>                   
+            </div>
+
+            <div class="copyright-wrap">
+                <img src="assets/image/logo/logo.png" alt="">
+                <span>© Copyright squarebagel 2022</span>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
             </div>
         </div>
     </footer>
     <!-- End -->
+    
+    <!-- Javascript -->
     <script>
         const hamburgerBtn = document.getElementById("navBtn");
         const navBar = document.getElementById("navbar");
+        const bodyElement = document.body;
         hamburgerBtn.addEventListener("click", mobileMenu);
         function mobileMenu() {
             navBar.classList.toggle("show");
             hamburgerBtn.classList.toggle("show");
+            bodyElement.classList.toggle("stop-scroll");
         }
     </script>
-    <!-- Javascript -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/slick-slider-min.js"></script>
     <script src="assets/js/main.js"></script>
