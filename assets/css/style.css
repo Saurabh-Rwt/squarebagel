@@ -943,7 +943,7 @@ footer .copyright-wrap a:hover {
   }
   .marketplace .tab-container .tab-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 7px 0;
   }
   .marketplace .tab-container .tab-buttons .tab-button {
@@ -996,7 +996,7 @@ footer .copyright-wrap a:hover {
   }
   footer .mobile-footer .row {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   footer .mobile-footer .row .main-title {
     margin-bottom: 1.5rem;
